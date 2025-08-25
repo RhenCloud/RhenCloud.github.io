@@ -66,10 +66,7 @@
     as="style"
     href="https://npm.webcache.cn/katex@0.16.22/dist/katex.min.css"
     integrity="sha384-5TcZemv2l/9On385z///&#43;d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous"onload="this.onload=null;this.rel='stylesheet'"
-  /><link
-    rel="stylesheet"
-    href="https://npm.webcache.cn/@waline/client@2.15.8/dist/waline.css"
-    integrity="sha384-vltfZtesCdl6NYVcFVcjEaIi5RpNvZe9t7fXvq8twVtcoy&#43;Ub9QgnxUYJmwOhYCK" crossorigin="anonymous"/><script
+  /><script
     src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js"
     integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous"></script><link
     rel="stylesheet"
@@ -247,39 +244,18 @@
       本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener external nofollow noreferrer" target="_blank"><span class="icon-creative-commons"></span>BY-NC-SA</a> 许可协议。转载请注明出处！
     </p>
     <span class="icon-creative-commons article-copyright-bg"></span></blockquote>
-<a
-          data-aos="zoom-in"
-          href="/about/#comments"
-          class="article-comment-link"
-        >
-          <span
-            class="post-comments-count waline-comment-count"
-            data-path="https//blog.rhen.cloud/about/"
-            itemprop="commentCount"
-          ></span>
-          留言
-        </a><span
-          data-aos="zoom-in"
-          class="article-visitor-link"
-        >
-          <span
-            class="waline-pageview-count"
-            data-path="/about/"
-            >0</span
-          >
-          <em class="post-meta-item-text">阅读量</em>
-        </span><ul class="article-tag-list" itemprop="keywords"></ul>
+<ul class="article-tag-list" itemprop="keywords"></ul>
 </footer>
   </div></article><section id="comments" data-aos="fade-up">
 <div class="comment-header"><h2 class="comment-title">说些什么吧！</h2>
   <div class="comment-selector">
-    <div class="comment-selector-wrap"><div class="selector-item" data-selector="waline">
-          <span>waline</span>
+    <div class="comment-selector-wrap"><div class="selector-item" data-selector="giscus">
+          <span>giscus</span>
         </div></div>
   </div>
 </div>
 
-<div class="comment-content"><div class="comment waline-comment" data-aos="fade-up"
+<div class="comment-content"><div class="comment giscus-comment" data-aos="fade-up"
      >
     </div></div>
 </section></section>
@@ -495,7 +471,7 @@
       }
     },
     waline: {
-      enable: true,
+      enable: false,
       load: async () => {
         const container = document.querySelector('.waline-comment');
         if (!container) return;
@@ -611,7 +587,7 @@
       }
     },
     giscus: {
-      enable: false,
+      enable: true,
       load: () => {
         const container = document.querySelector('.giscus-comment');
         if (!container) return;
@@ -635,10 +611,10 @@
         const giscusLang = supportedLangs.includes(docLang) ? docLang : supportedLangs.includes(langBase) ? langBase : 'en';
 
         giscusScript.src = 'https://giscus.app/client.js';
-        giscusScript.setAttribute('data-repo', '');
-        giscusScript.setAttribute('data-repo-id', '');
-        giscusScript.setAttribute('data-category', '');
-        giscusScript.setAttribute('data-category-id', '');
+        giscusScript.setAttribute('data-repo', 'RhenCloud\/RhenCloud.github.io');
+        giscusScript.setAttribute('data-repo-id', 'R_kgDOPjqE3Q');
+        giscusScript.setAttribute('data-category', 'Announcements');
+        giscusScript.setAttribute('data-category-id', 'DIC_kwDOPjqE3c4Cujt0');
         giscusScript.setAttribute('data-mapping', '0');
         giscusScript.setAttribute('data-strict', '0');
         giscusScript.setAttribute('data-reactions-enabled', '1');
